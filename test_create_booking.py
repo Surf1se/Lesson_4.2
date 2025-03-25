@@ -3,6 +3,8 @@ from constant import BASE_URL
 from datetime import date
 from pydantic import BaseModel
 from booking_api import BookingApi
+import pytest
+import requests
 
 class BookingDates(BaseModel):
     checkin: date
